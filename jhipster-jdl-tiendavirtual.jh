@@ -1,0 +1,36 @@
+enum CartStatus {
+    OPEN, COMPLETE, DISCARD
+}
+
+entity Customer {
+	firstName String,
+    lastName String,
+    email String,
+    telephone String
+}
+
+entity Product {
+    title String required,
+    description String,
+    price Float
+}
+
+entity Cart {
+    totalPrice Float,
+    date LocalDate,
+    status CartStatus
+}
+
+entity SpecialDate{
+    beginDate LocalDate,
+    finishDate LocalDate
+    
+}
+
+relationship OneToMany {
+    Customer{cart} to Cart{customer},
+    Cart{product(title)} to Product{cart},
+}
+
+paginate Customer, Product with pagination
+paginate Product with infinite-scroll

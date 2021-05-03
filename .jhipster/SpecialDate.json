@@ -1,0 +1,25 @@
+{
+  "name": "SpecialDate",
+  "fields": [
+    {
+      "fieldName": "beginDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "finishDate",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201204200628",
+  "entityTableName": "special_date",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

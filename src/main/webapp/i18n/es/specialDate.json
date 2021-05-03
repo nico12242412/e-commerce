@@ -1,0 +1,23 @@
+{
+  "tiendaVirtualApp": {
+    "specialDate": {
+      "home": {
+        "title": "Special Dates",
+        "createLabel": "Crear nuevo Special Date",
+        "createOrEditLabel": "Crear o editar Special Date",
+        "notFound": "Ningún Special Dates encontrado"
+      },
+      "created": "Un nuevo Special Date ha sido creado con el identificador {{ param }}",
+      "updated": "Un Special Date ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Special Date ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Special Date {{ id }}?"
+      },
+      "detail": {
+        "title": "Special Date"
+      },
+      "beginDate": "Begin Date",
+      "finishDate": "Finish Date"
+    }
+  }
+}

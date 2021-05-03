@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "ar.com.danaide",
+      "nativeLanguage": "es"
+    },
+    "jhipsterVersion": "6.9.1",
+    "applicationType": "monolith",
+    "baseName": "tiendaVirtual",
+    "packageName": "ar.com.danaide",
+    "packageFolder": "ar/com/danaide",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YjY2NzcwMDg1ZTkyNWVkMGE1ZGNhZGI2NWY4ZmQ5MjljM2FlNzFiYjZhM2M2NmJlNGZkOWRjY2NiZDY5MjZmNGFiMDNjZmFjZDU4MThhNWI1MDBmNTFkZDM2MzhjNGYyMWE4ZWU0NmM3N2Y0MmE2NjVkZjMzYTZkYTZkN2FiZjc=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1607110841247,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "es",
+    "languages": ["es"],
+    "blueprints": []
+  }
+}

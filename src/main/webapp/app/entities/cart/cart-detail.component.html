@@ -1,0 +1,44 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="cart">
+            <h2><span jhiTranslate="tiendaVirtualApp.cart.detail.title">Cart</span> {{ cart.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="tiendaVirtualApp.cart.totalPrice">Total Price</span></dt>
+                <dd>
+                    <span>{{ cart.totalPrice }}</span>
+                </dd>
+                <dt><span jhiTranslate="tiendaVirtualApp.cart.date">Date</span></dt>
+                <dd>
+                    <span>{{ cart.date }}</span>
+                </dd>
+                <dt><span jhiTranslate="tiendaVirtualApp.cart.status">Status</span></dt>
+                <dd>
+                    <span jhiTranslate="{{ 'tiendaVirtualApp.CartStatus.' + cart.status }}">{{ cart.status }}</span>
+                </dd>
+                <dt><span jhiTranslate="tiendaVirtualApp.cart.customer">Customer</span></dt>
+                <dd>
+                    <div *ngIf="cart.customer">
+                        <a [routerLink]="['/customer', cart.customer?.id, 'view']">{{ cart.customer?.id }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/cart', cart.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

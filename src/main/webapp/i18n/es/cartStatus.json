@@ -1,0 +1,10 @@
+{
+  "tiendaVirtualApp": {
+    "CartStatus": {
+      "null": "",
+      "OPEN": "OPEN",
+      "COMPLETE": "COMPLETE",
+      "DISCARD": "DISCARD"
+    }
+  }
+}

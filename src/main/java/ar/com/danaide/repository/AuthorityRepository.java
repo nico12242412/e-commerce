@@ -1,0 +1,11 @@
+package ar.com.danaide.repository;
+
+import ar.com.danaide.domain.Authority;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+/**
+ * Spring Data JPA repository for the {@link Authority} entity.
+ */
+public interface AuthorityRepository extends JpaRepository<Authority, String> {
+}
